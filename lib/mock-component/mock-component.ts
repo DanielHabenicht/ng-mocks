@@ -4,6 +4,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 const cache = new Map<Type<Component>, Type<Component>>();
 
 export function MockComponent<TComponent>(component: Type<TComponent>): Type<TComponent> {
+  console.log('hi');
   const cacheHit = cache.get(component);
   if (cacheHit) {
     return cacheHit as Type<TComponent>;

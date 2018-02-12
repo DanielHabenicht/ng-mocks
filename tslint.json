@@ -2,10 +2,12 @@
   "extends": "tslint:all",
   "rules": {
     "completed-docs": false,
+    "max-classes-per-file": false,
     "member-access": false,
     "newline-before-return": false,
     "newline-per-chained-call": false,
     "no-any": false,
+    "no-default-export": false,
     "no-implicit-dependencies": [true, "dev"],
     "no-floating-promises": false,
     "no-submodule-imports": false,
